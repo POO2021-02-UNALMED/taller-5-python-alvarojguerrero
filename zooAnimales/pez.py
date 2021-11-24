@@ -6,14 +6,14 @@ class Pez(Animal):
     salmones = 0
     bacalaos = 0
 
-    def __init__(self, nombre, edad, habitat, genero, colorEscamas, cantidadAletas):
+    def __init__(self, nombre, edad, habitat, genero, colorescamas, cantidadaletas):
         super().__init__(nombre, edad, habitat, genero)
-        self.setColorEscamas(colorEscamas)
-        self.setCantidadAletas(cantidadAletas)
+        self.setColorEscamas(colorescamas)
+        self.setCantidadAletas(cantidadaletas)
         Pez._listado.append(self)
 
     @classmethod
-    def cantidadpeces(cls):
+    def cantidadPeces(cls):
         return len(cls._listado)
 
     def movimiento(self):
